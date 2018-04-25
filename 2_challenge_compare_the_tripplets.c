@@ -83,19 +83,17 @@ int* solve(int a0, int a1, int a2, int b0, int b1, int b2, int* result_count) {
      int i=0;
      static int OutPut[2]={0};
 
-     *result_count = 0;
+     *result_count = 2; //Alice and Bob
 
      for(i=0; i<3; i++)
      {
 	 	if(A[i]>B[i])
 	 	{
 			OutPut[0]+=1;
-        	(*result_count)++; 
 		}
 	    else if(A[i]<B[i])
 		{
 			OutPut[1]+=1;
-        	(*result_count)++; 
 		}
      }
      return OutPut;
